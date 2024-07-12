@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6A50AD45-A4F8-49A1-93AE-C20104E4EFA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApi.Core", "src\DemoApi.Core\DemoApi.Core.csproj", "{6FF3CCE0-2B94-4640-A666-0B73635BB764}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApi.Infrastructure", "src\DemoApi.Infrastructure\DemoApi.Infrastructure.csproj", "{13A79FCF-ECE3-4EE1-8FF2-BA3FC40AAC67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApi.Web", "src\DemoApi.Web\DemoApi.Web.csproj", "{79B76559-C3BC-4F3D-8E54-350CC0343EAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{16A7C31B-B083-4602-A00F-AFA7A131405D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApi.Tests", "tests\DemoApi.Tests\DemoApi.Tests.csproj", "{D0F5E7BE-4FD1-4A6D-8F5A-2795D01B9521}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{F8ED5C12-4FC4-4860-B58C-716069E5D19D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "books", "books", "{9DE2B6A0-A645-40C2-AAB0-FBC73260B699}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\books\README.md = frontend\books\README.md
+		frontend\books\.gitignore = frontend\books\.gitignore
+		frontend\books\package.json = frontend\books\package.json
+		frontend\books\next-env.d.ts = frontend\books\next-env.d.ts
+		frontend\books\tsconfig.json = frontend\books\tsconfig.json
+		frontend\books\.eslintrc.json = frontend\books\.eslintrc.json
+		frontend\books\next.config.mjs = frontend\books\next.config.mjs
+		frontend\books\package-lock.json = frontend\books\package-lock.json
+		frontend\books\postcss.config.mjs = frontend\books\postcss.config.mjs
+		frontend\books\tailwind.config.ts = frontend\books\tailwind.config.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{C23BB564-1134-49D3-A5B8-303C8B058FBC}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\books\public\next.svg = frontend\books\public\next.svg
+		frontend\books\public\vercel.svg = frontend\books\public\vercel.svg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{931B8830-472F-4D83-B58C-EDF0C5CD8FA4}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\books\app\page.tsx = frontend\books\app\page.tsx
+		frontend\books\app\layout.tsx = frontend\books\app\layout.tsx
+		frontend\books\app\favicon.ico = frontend\books\app\favicon.ico
+		frontend\books\app\globals.css = frontend\books\app\globals.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{7593CBF6-139E-4C43-8185-5168D6677461}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FF3CCE0-2B94-4640-A666-0B73635BB764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF3CCE0-2B94-4640-A666-0B73635BB764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF3CCE0-2B94-4640-A666-0B73635BB764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF3CCE0-2B94-4640-A666-0B73635BB764}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A79FCF-ECE3-4EE1-8FF2-BA3FC40AAC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A79FCF-ECE3-4EE1-8FF2-BA3FC40AAC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A79FCF-ECE3-4EE1-8FF2-BA3FC40AAC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A79FCF-ECE3-4EE1-8FF2-BA3FC40AAC67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B76559-C3BC-4F3D-8E54-350CC0343EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B76559-C3BC-4F3D-8E54-350CC0343EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B76559-C3BC-4F3D-8E54-350CC0343EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B76559-C3BC-4F3D-8E54-350CC0343EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0F5E7BE-4FD1-4A6D-8F5A-2795D01B9521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F5E7BE-4FD1-4A6D-8F5A-2795D01B9521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F5E7BE-4FD1-4A6D-8F5A-2795D01B9521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F5E7BE-4FD1-4A6D-8F5A-2795D01B9521}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6FF3CCE0-2B94-4640-A666-0B73635BB764} = {6A50AD45-A4F8-49A1-93AE-C20104E4EFA1}
+		{13A79FCF-ECE3-4EE1-8FF2-BA3FC40AAC67} = {6A50AD45-A4F8-49A1-93AE-C20104E4EFA1}
+		{79B76559-C3BC-4F3D-8E54-350CC0343EAF} = {6A50AD45-A4F8-49A1-93AE-C20104E4EFA1}
+		{D0F5E7BE-4FD1-4A6D-8F5A-2795D01B9521} = {16A7C31B-B083-4602-A00F-AFA7A131405D}
+		{9DE2B6A0-A645-40C2-AAB0-FBC73260B699} = {F8ED5C12-4FC4-4860-B58C-716069E5D19D}
+		{C23BB564-1134-49D3-A5B8-303C8B058FBC} = {9DE2B6A0-A645-40C2-AAB0-FBC73260B699}
+		{931B8830-472F-4D83-B58C-EDF0C5CD8FA4} = {9DE2B6A0-A645-40C2-AAB0-FBC73260B699}
+	EndGlobalSection
+EndGlobal
