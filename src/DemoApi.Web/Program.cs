@@ -3,11 +3,9 @@ using DemoApi.Core;
 using DemoApi.Core.Models;
 using DemoApi.Core.Services;
 using DemoApi.Infrastructure;
-using DemoApi.Infrastructure.Persistense;
 using DemoApi.Web;
-using FluentValidation;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using SharpGrip.FluentValidation.AutoValidation.Endpoints.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +19,10 @@ builder.Services.AddDbContext<BooksContext>(options =>
     options.UseInMemoryDatabase("BookContext"));
 
 builder.Services.AddAutoMapper(Assembly.GetAssembly(typeof(BookViewModel)));
+
+builder.Services.AddAuthorization();
+builder.Services.AddIdentityApiEndpoints<IdentityUser>()
+    .AddEntityFrameworkStores<BooksContext>();
 
 builder.Services.AddCors(options =>
 {
@@ -51,7 +53,11 @@ app.UseHttpsRedirection();
 app.UseCors("ReactPolicy");
 app.UseGlobalExceptionHandling();
 
-app.MapGet("/books", async (BooksService service) => await service.GetBooksAsync());
+app.MapIdentityApi<IdentityUser>();
+
+app.MapGet("/books", async (BooksService service) => await service.GetBooksAsync())
+    .RequireAuthorization();;
+
 
 app.MapPut("/books", () =>
 {
